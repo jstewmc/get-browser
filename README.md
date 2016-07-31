@@ -4,9 +4,8 @@ Get a browser's information.
 ```php
 use Jstewmc\GetBrowser;
 
-// let's define a request service
-$request = new class implements Request
-{
+// define a request service
+$request = new class implements Request {
     public function getIp()
     {
         return '1.2.3.4';
@@ -29,8 +28,6 @@ $browser->getVersion();   // returns "9.1.1"
 $browser->getPlatform();  // returns "Macintosh"
 $browser->getIp();        // returns "1.2.3.4"
 ```
-
-## Benefits
 
 This library uses the lightweight [donatj/phpuseragentparser](https://github.com/donatj/PhpUserAgent) library. Unlike PHP's native [get_browser()](http://php.net/manual/en/function.get-browser.php) function which requires a separate `browscap.ini` file, the Php User Agent library uses regex to determine a browser's _name_, _version_, and _platform_.
 
