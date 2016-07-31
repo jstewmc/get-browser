@@ -1,0 +1,30 @@
+{
+	"name": "jstewmc/get-browser", 
+	"description": "Get browser information",
+	"license": "MIT",
+	"keywords": ["php", "jstewmc", "browser"],
+	"authors": [
+		{
+			"name": "Jack Clayton",
+			"email": "clayjs0@gmail.com"	
+		}
+	],
+	"repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/jstewmc/test-case"
+        }	
+	],
+	"require": {
+		"php": "^7.0",
+		"donatj/phpuseragentparser": "^0.5"
+	},
+	"require-dev": {
+		"jstewmc/test-case": "^0.1"
+	},
+	"autoload": {
+		"psr-4": {
+			"Jstewmc\\GetBrowser\\": "src/"
+		}
+	}
+}
