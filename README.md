@@ -43,6 +43,10 @@ This library adds some simple validation and provides an object-oriented approac
 
 ## Version
 
+### 1.0.0, August 16, 2016
+
+* Major release
+
 ### 0.1.0, July 31, 2016
 
 * Initial release
