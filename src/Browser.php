@@ -141,7 +141,7 @@ class Browser
      * @return  Request
      * @since   0.1.0
      */
-    public function setVersion(string $version = null)
+    public function setVersion(string $version = null): self
     {
         $this->version = $version;
         

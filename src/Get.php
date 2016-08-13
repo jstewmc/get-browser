@@ -1,6 +1,6 @@
 <?php
 /**
- * The file for the get-browser context
+ * The file for the get-browser service
  *
  * @author     Jack Clayton <clayjs0@gmai.com>
  * @copyright  2016 Jack Clayton
@@ -10,7 +10,7 @@
 namespace Jstewmc\GetBrowser;
 
 /**
- * The get-browser context
+ * The get-browser service
  *
  * @since  0.1.0
  */
@@ -28,7 +28,7 @@ class Get
     /* !Magic methods */
     
     /**
-     * Called when the class is constructed
+     * Called when the service is constructed
      *
      * @param  Request  $request  the browser's http request
      * @since  0.1.0
@@ -39,10 +39,9 @@ class Get
     }
         
     /**
-     * Gets the browser
+     * Called when the service is treated like a function
      * 
-     * @param   Request  $request  the http request
-     * @return  Request
+     * @return  Browser
      * @since   0.1.0
      */
     public function __invoke(): Browser

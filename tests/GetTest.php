@@ -1,6 +1,6 @@
 <?php
 /**
- * The file for the get-browser tests
+ * The file for the get-browser service tests
  *
  * @author     Jack Clayton <clayjs0@gmail.com>
  * @copyright  2016 Jack Clayton
@@ -12,7 +12,7 @@ namespace Jstewmc\GetBrowser;
 use Jstewmc\TestCase\TestCase;
 
 /**
- * Tests for the get-browser tests
+ * Tests for the get-browser service tests
  */
 class GetTest extends TestCase
 {
