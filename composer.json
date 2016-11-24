@@ -11,7 +11,8 @@
 	],
 	"require": {
 		"php": "^7.0",
-		"donatj/phpuseragentparser": "^0.5"
+		"donatj/phpuseragentparser": "^0.5",
+		"jstewmc/browser": "^0.1"
 	},
 	"require-dev": {
 		"jstewmc/test-case": "^1.0"
