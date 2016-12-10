@@ -2,7 +2,7 @@
 Get a browser's information.
 
 ```php
-use Jstewmc\GetBrowser;
+namespace Jstewmc\GetBrowser;
 
 // define the user-agent
 $userAgent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) '
@@ -13,13 +13,15 @@ $userAgent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_11_5) '
 $service = new GetBrowser();
 
 // get the browser
-$browser = (new GetBrowser())($userAgent);
+$browser = $service($userAgent);
 
 // return the request's browser information
 $browser->getName();      // returns "Safari"
 $browser->getVersion();   // returns "9.1.1"
 $browser->getPlatform();  // returns "Macintosh"
 ```
+
+In the real world, you'd probably get the user-agent string from the HTTP request, and you'd probably define the service in your Dependency Injection (DI) container. But, you get the idea!
 
 This library uses the lightweight [donatj/phpuseragentparser](https://github.com/donatj/PhpUserAgent) library. Unlike PHP's native [get_browser()](http://php.net/manual/en/function.get-browser.php) function which requires a separate `browscap.ini` file, the Php User Agent library uses regex to determine a browser's _name_, _version_, and _platform_.
 
@@ -34,6 +36,10 @@ This library adds some simple validation and provides an object-oriented approac
 [Jack Clayton](clayjs0@gmail.com)
 
 ## Version
+
+### 2.0.1, December 10, 2016
+
+* Update README (fixes [#1](https://github.com/jstewmc/get-browser/issues/1))
 
 ### 2.0.0, November, 24, 2016
 
